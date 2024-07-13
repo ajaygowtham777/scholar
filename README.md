@@ -1,1 +1,1 @@
-# scholar.com
+# scholar
