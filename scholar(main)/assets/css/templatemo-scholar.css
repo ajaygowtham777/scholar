@@ -1899,3 +1899,89 @@ body {
     width: 95%;
   }
 }
+
+
+
+<style>
+        .event_box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .event_outer {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .events_item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .event_outer:hover {
+            transform: translateY(-10px);
+        }
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+        .thumb img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .thumb:hover img {
+            transform: scale(1.1);
+        }
+        .down-content {
+            padding: 15px;
+        }
+        .author {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        .down-content h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .slider {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .event_outer:hover .slider {
+            display: flex;
+            opacity: 1;
+        }
+        .slider .content {
+            padding: 20px;
+        }
+        .slider .content a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        .slider .content a:hover {
+            border-bottom: 1px solid #007bff;
+        }
+    </style>
